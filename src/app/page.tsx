@@ -12,7 +12,7 @@ export default function Home() {
           <Link href='/register' className={styles.btn}>Zacznij korzystać za darmo</Link>
         </span>
         <span>
-          <Image src="/hero-slice@2x.webp" alt="" width="476" height="476" />
+          <Image src="/hero-slice@2x.webp" alt="" width="476" height="476" priority={true}/>
         </span>
       </main>
     </div>

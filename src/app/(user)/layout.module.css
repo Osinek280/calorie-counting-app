@@ -1,0 +1,10 @@
+.main {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  width: 100%;
+  padding-left: 52px;
+  padding-right: 52px;
+  padding-top: 76px;
+  padding-bottom: 30px;
+}
