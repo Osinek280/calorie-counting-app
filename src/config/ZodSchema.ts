@@ -24,9 +24,7 @@ export const registerSchema = z.object({
 });
 
 export const userDetailsSchema = z.object({
-  gender: z.enum(['male', 'female', 'other'], {
-    required_error: 'Gender is required',
-  }),
+  gender: z.enum(['male', 'female'], {message: 'Please enter a gender'}),
   dateOfBirth: z.string().refine(
     (val) => !isNaN(Date.parse(val)),
     {

@@ -35,49 +35,49 @@ const Register = () => {
           <div className={styles["input-box"]}>
             <Image
               className={styles.icon}
-              src="https://cdn.icon-icons.com/icons2/2941/PNG/512/profile_icon_183761.png"
+              src="/icons/user.svg"
               alt="Profile Icon"
               width={18}
               height={18}
             />
             <input type="text" placeholder="First Name" name="name" />
           </div>
-          {errors.name && <p className={styles.error}>{errors.name}</p>}
+          {errors.name && <p className={styles.error}>{errors.name[0]}</p>}
         </div>
 
         <div className={styles["input-wrapper"]}>
           <div className={styles["input-box"]}>
             <Image
               className={styles.icon}
-              src="https://cdn.icon-icons.com/icons2/2941/PNG/512/profile_icon_183761.png"
+              src="/icons/user.svg"
               alt="Profile Icon"
               width={18}
               height={18}
             />
             <input type="text" placeholder="Last Name" name="lastName" />
           </div>
-          {errors.lastName && <p className={styles.error}>{errors.lastName}</p>}
+          {errors.lastName && <p className={styles.error}>{errors.lastName[0]}</p>}
         </div>
 
         <div className={styles["input-wrapper"]}>
           <div className={styles["input-box"]}>
             <Image
               className={styles.icon}
-              src="https://cdn.icon-icons.com/icons2/2941/PNG/512/message_icon_183786.png"
+              src="/icons/email.svg"
               alt="Email Icon"
               width={18}
               height={18}
             />
             <input placeholder="Email" name="email" />
           </div>
-          {errors.email && <p className={styles.error}>{errors.email}</p>}
+          {errors.email && <p className={styles.error}>{errors.email[0]}</p>}
         </div>
 
         <div className={styles["input-wrapper"]}>
           <div className={styles["input-box"]}>
             <Image
               className={styles.icon}
-              src="https://cdn.icon-icons.com/icons2/1760/PNG/512/4105941-lock-login-password-security-sign-in-sign-out_113932.png"
+              src="/icons/lock.svg"
               alt="Password Icon"
               width={18}
               height={18}
@@ -86,8 +86,8 @@ const Register = () => {
             <Image
               className={styles.icon}
               src={passwordVisibly
-                ? 'https://cdn.icon-icons.com/icons2/2941/PNG/512/hide_icon_183794.png'
-                : '/displayed-Password.svg'}
+                ? '/icons/show-password.svg'
+                : '/icons/hide-password.svg'}
               alt="Toggle Password Visibility Icon"
               width={18}
               height={18}
@@ -120,7 +120,7 @@ const Register = () => {
         <div className={styles["login-social-media"]}>
           <div>
             <Image
-              src="https://cdn.icon-icons.com/icons2/729/PNG/512/google_icon-icons.com_62736.png"
+              src="/icons/google.svg"
               alt="Google Icon"
               width={20}
               height={20}
@@ -128,7 +128,7 @@ const Register = () => {
           </div>
           <div>
             <Image
-              src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202107facebookfblogosocialsocialmedia-115710_115591.png"
+              src="/icons/facebook.svg"
               alt="Facebook Icon"
               width={20}
               height={20}

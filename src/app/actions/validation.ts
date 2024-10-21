@@ -6,10 +6,10 @@ export type UserDetailsErrors = Partial<Record<keyof z.infer<typeof userDetailsS
 
 export async function userValidation(formData: FormData) {
   const recalldDta = {
-    name: formData.get("name") as string,
-    lastName: formData.get("lastName") as string,
-    email: formData.get("email") as string,
-    password: formData.get("password") as string,
+    name: formData.get("name"),
+    lastName: formData.get("lastName"),
+    email: formData.get("email"),
+    password: formData.get("password"),
   }
 
   const result = registerSchema.safeParse(recalldDta)
@@ -21,10 +21,10 @@ export async function userValidation(formData: FormData) {
 
 export async function userDetailsValidation(formData: FormData) {
   const recalldDta = {
-    gender: formData.get("gender") as string,
-    dateOfBirth: formData.get("dateOfBirth") as string,
-    weight: formData.get("weight") as string,
-    height: formData.get("height") as string,
+    gender: formData.get("gender"),
+    dateOfBirth: formData.get("dateOfBirth"),
+    weight: formData.get("weight"),
+    height: formData.get("height"),
   }
   const result = userDetailsSchema.safeParse(recalldDta)
 
